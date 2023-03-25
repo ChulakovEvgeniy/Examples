@@ -5,7 +5,7 @@
 int xa = 40;
 int ya = 1;
 int xb = 1;
-int yb = 30, xc = 80, yc = 30;
+int yb = 30, xc = 80, yc = 30;//крайние точки, вершины
 
 Console.SetCursorPosition(xa, ya);
 Console.WriteLine("+");
@@ -14,13 +14,13 @@ Console.SetCursorPosition(xb, yb);
 Console.WriteLine("+");
 
 Console.SetCursorPosition(xc, yc);
-Console.WriteLine("+");
+Console.WriteLine("+");//нарисовали вершины
 
 int x = xa, y = xb;
 
 int count = 0;
 
-while(count < 11000)
+while(count < 11000)//цикл
 {
     int what = new Random().Next(0, 3);
     if(what == 0)
